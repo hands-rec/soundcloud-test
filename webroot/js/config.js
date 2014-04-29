@@ -1,3 +1,3 @@
-Config = {
+var Config = {
   client_id:""
-}
+};
