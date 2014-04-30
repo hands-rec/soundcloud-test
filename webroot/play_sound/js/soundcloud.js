@@ -3,7 +3,13 @@ $(function(){
   client_id: Config.client_id,
   });
 
-  SC.stream("/tracks/293", function(sound){
-    sound.play();
-  });  
+  var track_id = '293';
+  $('#btn_play').click(function(){
+    SC.stream("/tracks/"+track_id, function(sound){
+      sound.play();
+      $('#btn_pause').click(function(){
+        sound.pause();
+      });
+    });
+  });
 });
