@@ -11,4 +11,6 @@ $(function(){
       });
     });
   });
+  
+  SC.oEmbed('http://soundcloud.com/forss/flickermood', document.getElementById("play_box"));
 });
