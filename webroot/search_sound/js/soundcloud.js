@@ -9,7 +9,6 @@ $(function(){
       if (0<tracks.length) {
         $('#search_result').append('<ul>');
         for (var i = 0; i < tracks.length; i++) {
-          console.log(tracks[i]);
           $('#search_result').find('ul').append('<li>'+tracks[i].title+'&nbsp;<a href="#'+tracks[i].id+'">Play</a></li>');
         };
         $('#search_result').append('</ul>');
