@@ -3,7 +3,8 @@ $(function(){
   client_id: Config.client_id,
   });
 
-  $('#btn_search').click(function(){
+  $('#btn_search').click(function(e){
+    e.preventDefault();
     SC.get('/tracks', { q: $('#keyword').val()}, function(tracks) {
       $('#search_result').empty();
       if (0<tracks.length) {
