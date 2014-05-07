@@ -8,7 +8,7 @@ $(function(){
     e.preventDefault();
     soundManager.stopAll();
   });
-  play
+  
   $('#btn_search').click(function(e){
     e.preventDefault();
     SC.get('/tracks', { q: $('#keyword').val(), limit: 10}, function(tracks) {
