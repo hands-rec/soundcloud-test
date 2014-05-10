@@ -3,6 +3,12 @@ $(function(){
     client_id: Config.client_id,
   });
 
+  var $player = $("#player");
+  $player.find("#stop").click(function(e) {
+    e.preventDefault();
+    soundManager.stopAll();
+  });
+
   $('#btn_search').click(function(e){
     e.preventDefault();
 
